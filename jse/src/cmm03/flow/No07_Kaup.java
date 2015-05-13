@@ -8,14 +8,17 @@ public class No07_Kaup {
 		int idx;
 		Scanner scanner = new Scanner(System.in);
 		No07_Kaup() {
-			this(0,0);
+			//this(0,0);
+			setHeight(height);
+			setWeight(weight);
 			this.idx = (int)((weight/(height*height))*10000);
 
 		}
+		/*
 		No07_Kaup(double i, double j) {
-			setHeight(i);
-			setWeight(j);
+			
 		}
+		*/
 		public void setHeight(double height) {
 			System.out.println("키를 입력하세요 : ");
 			this.height = scanner.nextDouble();

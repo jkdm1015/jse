@@ -6,7 +6,7 @@ public class No08_NumberMatch {
 	
 	public static void main(String[] args) {
 		
-		No08_NumberMatchVo vo = new No08_NumberMatchVo();
+		No08_NumberMatchVO vo = new No08_NumberMatchVO();
 		System.out.println("총 3회만 입력가능합니다.");
 		Scanner scanner = new Scanner(System.in);
 		int result = 0;
@@ -36,7 +36,7 @@ public class No08_NumberMatch {
 						+"\n게임에서 패배했습니다"
 						+"\n게임을 종료합니다");
 			}
-		}
+		}scanner.close();
 		
 	
 	}
