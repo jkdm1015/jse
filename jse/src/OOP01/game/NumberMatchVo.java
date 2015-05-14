@@ -7,7 +7,7 @@ public class NumberMatchVo {
 	}
 	public void setPlayer(int player) {
 		if(player <1 || player >5){
-			System.out.println("1부터 5까지의 정수만 입력해야 합니다.");
+			System.out.println("1부터 2까지의 정수만 입력해야 합니다.");
 		}else{
 			this.player = player;
 		}
