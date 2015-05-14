@@ -7,7 +7,7 @@ public class NumberMatchController {
 		int player;
 		Scanner scanner = new Scanner(System.in);
 		NumberMatchService service = new NumberMatchService();
-		System.out.println("1~5까지의 수를 입력해주세요");
+		System.out.println("1~2까지의 수를 입력해주세요");
 		player = scanner.nextInt();
 		service.game(player);
 		scanner.close();
