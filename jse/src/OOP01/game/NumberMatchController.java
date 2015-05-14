@@ -10,5 +10,6 @@ public class NumberMatchController {
 		System.out.println("1~5까지의 수를 입력해주세요");
 		player = scanner.nextInt();
 		service.game(player);
+		scanner.close();
 	}
 }
