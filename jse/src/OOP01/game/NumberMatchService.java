@@ -4,7 +4,7 @@ public class NumberMatchService {
 	NumberMatchVo vo = new NumberMatchVo();
 	
 	int result;
-	int player=0, com=0;
+	int player=0;
 	
 	public int game(int player) {
 		vo.setCom();

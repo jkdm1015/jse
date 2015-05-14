@@ -2,7 +2,6 @@ package OOP01.game;
 
 public class NumberMatchVo {
 	int player, com;
-	int input;
 	public int getPlayer() {
 		return player;
 	}
@@ -15,12 +14,6 @@ public class NumberMatchVo {
 	}
 	public int getCom() {
 		return com;
-	}
-	public int getInput() {
-		return input;
-	}
-	public void setInput(int input) {
-		this.input = input;
 	}
 	public void setCom() {
 		this.com = (int) ((Math.random()*2)+1);
