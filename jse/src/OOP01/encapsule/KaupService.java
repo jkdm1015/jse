@@ -1,4 +1,4 @@
-package OOP01.game;
+package OOP01.encapsule;
 
 import java.util.Scanner;
 
