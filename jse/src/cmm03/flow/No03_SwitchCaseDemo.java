@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class No03_SwitchCaseDemo {
 	public static void main(String[] args) {
 		System.out.println("평균 점수를 입력하세요");
+		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		int avg = scanner.nextInt();
 		String result;

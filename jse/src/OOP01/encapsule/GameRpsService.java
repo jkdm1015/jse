@@ -36,21 +36,28 @@ public class GameRpsService {
 	}
 
 	public String showWinner(int comValue, int playersValue) {
-		String str;
-		if(comValue<playersValue){
-			str = "컴퓨터 승리";
-		}if(comValue>playersValue){
-			str = "사용자 승리";
-		}else{
-			str = "비겼습니다.";
-		}
-		return str;
+		int result = playersValue-comValue;
+		String msg = "";
+		switch(result){
+		
+			case -1:
+			case 2:
+				msg = "승리자는 컴퓨터입니다.";
+				break;
+			case 1:
+			case -2:
+				msg = "승리자는 당신입니다.";
+				break;
+			case 0:
+				msg = "비겼습니다.";
+				break;
+		}return msg;
 	}
 
 	/*
 	 * if(1<2<3<1)
 	 * 두수의 차가 절대값이 1인경우는 큰수가 승
-	 * 두수의 차가 절대값이 2인경우는 작수가 승
+	 * 두수의 차가 절대값이 2인경우는 작은수가 승
 	 * 
 	 * 
 	 * */   

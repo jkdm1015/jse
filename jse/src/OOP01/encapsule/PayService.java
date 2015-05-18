@@ -11,9 +11,11 @@ public class PayService {
 		vo.setName(name);
 		vo.setSalary(salary);
 	}
+	@SuppressWarnings("static-access")
 	public int taxValue(){
 		return (int) (vo.TAX*100);
 	}
+	@SuppressWarnings("static-access")
 	public int realSalary(){
 		return vo.getSalary() - ((int)(vo.getSalary()*vo.TAX));
 	}
