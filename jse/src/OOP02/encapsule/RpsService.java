@@ -1,14 +1,8 @@
-package OOP01.encapsule;
-/*
-  Date : 2015.05.15 
-  Author : 정민규
-  Description : 가위 바위 보 게임
-  1은 가위 2는 바위 3은 보
-  
- */
-public class GameRpsService {
+package OOP02.encapsule;
 
-	GameRpsVO vo = new GameRpsVO();
+public class RpsService {
+
+	RpsVO vo = new RpsVO();
 	
 	// 숫자 값에 따른 가위 바위 보 결정 로직
 	  
@@ -35,31 +29,21 @@ public class GameRpsService {
 		return i;
 	}
 
-	public String showWinner(int comValue, int playersValue) {
+	public String showWinner(int playersValue, int comValue) {
 		int result = playersValue-comValue;
 		String msg = "";
 		switch(result){
-		
-			case -1:
-			case 2:
-				msg = "승리자는 컴퓨터입니다.";
+			case 0:
+				msg = "비겼습니다.";
 				break;
 			case 1:
 			case -2:
 				msg = "승리자는 당신입니다.";
 				break;
-			case 0:
-				msg = "비겼습니다.";
+			default: 
+				msg = "승리자는 컴퓨터입니다.";
 				break;
 		}return msg;
 	}
-
-	/*
-	 * if(1<2<3<1)
-	 * 두수의 차가 절대값이 1인경우는 큰수가 승
-	 * 두수의 차가 절대값이 2인경우는 작은수가 승
-	 * 
-	 * 
-	 * */   
 
 }

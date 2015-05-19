@@ -1,4 +1,4 @@
-package OOP01.encapsule;
+package OOP02.encapsule;
 
 public class KaupVo {
 

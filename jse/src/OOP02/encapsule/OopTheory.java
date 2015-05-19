@@ -1,4 +1,4 @@
-package OOP01.encapsule;
+package OOP02.encapsule;
 /*
 	프로그램의 발전단계
 	1. 순차적 : GOTO, Line 번호 Fortran
