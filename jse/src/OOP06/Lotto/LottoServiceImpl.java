@@ -8,7 +8,7 @@ public class LottoServiceImpl implements LottoService {
 	@Override
 	public void extractLottos(int money) {
 		inputMoney(money);
-		int count; // = this.getCount(money); <= 의미 없음
+		// int count; = this.getCount(money); <= 의미 없음
 		for (int i = 0; i < ball.length; i++) {
 			ball[i] = i + 1;
 		}
@@ -28,7 +28,6 @@ public class LottoServiceImpl implements LottoService {
 		// 중복되지 않은 숫자이면
 		// lottos[count][i] = num 의 형태로 들어가게 됩니다.
 		// isDuplication 짱나서 안씀...
-
 	}
 
 	@Override
@@ -38,7 +37,7 @@ public class LottoServiceImpl implements LottoService {
 			extractLottos(money);
 			sort(lottos[i]);
 			for (int j = 0; j < lottos[i].length; j++) {
-				System.out.print(lottos[i][j] + " ");
+				System.out.print(lottos[i][j] + "\t");
 			}
 			System.out.println();
 		}
@@ -57,7 +56,7 @@ public class LottoServiceImpl implements LottoService {
 	}
 
 	@Override
-	public boolean isDuplicateion() {
+	public boolean isDuplication() {
 		// 안써!!!!!!!!!!
 		return false;
 	}

@@ -17,7 +17,7 @@ public interface LottoService {
 	// 랜덤번호를 생성하는 로직
 	public int getRandomNum();
 	// 로또는 중복된 숫자가 있어서는 안되므로 중복 여부를 판단하는 로직
-	public boolean isDuplicateion();
+	public boolean isDuplication();
 	// 로또 번호를 출력할 때
 	// 오름차순으로 나타내야 할 때 사용되는 로직
 	public void sort(int[] array);
