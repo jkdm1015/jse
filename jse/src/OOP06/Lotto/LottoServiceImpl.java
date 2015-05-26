@@ -27,6 +27,7 @@ public class LottoServiceImpl implements LottoService {
 		// isDuplication() 메소드 사용해야 합니다.
 		// 중복되지 않은 숫자이면
 		// lottos[count][i] = num 의 형태로 들어가게 됩니다.
+		// isDuplication 짱나서 안씀...
 
 	}
 
@@ -57,13 +58,7 @@ public class LottoServiceImpl implements LottoService {
 
 	@Override
 	public boolean isDuplicateion() {
-		/*
-		 * for(int i = 0 ; i<6 ; i++){ if(lottos[bool][i]==0){ return false; }
-		 * if(lottos[bool][i] == radomNum){ return true; }
-		 * 
-		 * }
-		 */
-
+		// 안써!!!!!!!!!!
 		return false;
 	}
 
